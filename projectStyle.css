@@ -67,6 +67,7 @@ header{
     transition: 0.5s ease;
 }
 
+/* Nav responsiveness */
 @media(max-width: 1000px){
     /* Navigation Bar */
     nav {
@@ -173,6 +174,7 @@ span{
     animation: cursor 1s infinite;
 }
 
+/* Animations */
 @keyframes cursor{
     to{
         border-left: 3px solid #b74b4b;
@@ -191,13 +193,16 @@ span{
     }
 }
 
+/* Main responsiveness */
 @media (max-width: 1000px){
+    /* Main */
     .home{
         gap: 4rem;
     }
 }
 
 @media(max-width:995px){
+    /* Main */
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
@@ -219,6 +224,7 @@ span{
 }
 
 @media(max-width: 525px){
+    /* Main */
     .home .home-content h1{
         font-size: 3.8rem;
         margin-bottom: 13px;
@@ -239,5 +245,103 @@ span{
 
     .home{
         padding-top: 130px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    padding: 40px 0 20px;
+    border-top: 1px solid #333;
+}
+
+.footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Socials Footer */
+.socialsFooter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.socialsFooter a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.socialsFooter a:hover {
+    background-color: #b74b4b;
+    transform: translateY(-5px);
+}
+
+.socialsFooter a i {
+    color: white;
+    font-size: 2em;
+}
+
+/* Navigation Footer */
+.navFooter ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.navFooter ul li {
+    margin: 0 15px;
+}
+
+.navFooter ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.navFooter ul li a:hover {
+    color: #b74b4b;
+}
+
+/* Copyright Footer */
+.bottomFooter {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.bottomFooter p {
+    color: #777;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.designer {
+    color: #b74b4b;
+    font-weight: 600;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    .navFooter ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navFooter ul li {
+        margin: 8px 0;
     }
 }
