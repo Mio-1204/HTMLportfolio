@@ -21,6 +21,17 @@ body{
 }
 
 /* Navigation Bar */
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 5px 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 200;
+}
+
 .name:hover {
     transform: scale(1.1);
 }
@@ -46,17 +57,6 @@ nav a:hover,
 nav a.active {
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
-}
-
-header{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    padding: 5px 60px;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    z-index: 200;
 }
 
 .name{
@@ -198,6 +198,7 @@ span{
     /* Main */
     .home{
         gap: 4rem;
+        padding: 10rem;
     }
 }
 
@@ -334,7 +335,7 @@ footer {
     font-weight: 600;
 }
 
-/* responsiveness */
+/* Footer responsiveness */
 @media (max-width: 768px) {
     .navFooter ul {
         flex-direction: column;
