@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-body{
+body {
     color: white;
     background-color: black;
     width: 100%;
@@ -21,7 +21,7 @@ body{
 }
 
 /* Navigation Bar */
-header{
+header {
     display: flex;
     position: relative;
     width: 100%;
@@ -29,22 +29,17 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    z-index: 200;
 }
 
 .name:hover {
     transform: scale(1.1);
 }
 
-.name:active {
-    text-decoration: underline;
-}
-
-nav a span{
+nav a span {
     margin-left: 0.3rem;
 }
 
-nav a{
+nav a {
     font-size: 18px;
     font-weight: 500;
     color: white;
@@ -53,13 +48,12 @@ nav a{
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover, nav a:active {
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
 
-.name{
+.name {
     font-size: 3rem;
     font-weight: 800;
     color: #b74b4b;
@@ -68,8 +62,7 @@ nav a.active {
 }
 
 /* Nav responsiveness */
-@media(max-width: 1000px){
-    /* Navigation Bar */
+@media(max-width: 1000px) {
     nav {
         padding: 0 20px;
     }
@@ -83,8 +76,7 @@ nav a.active {
     }
 }
 
-@media(max-width: 550px){
-    /* Navigation Bar */
+@media(max-width: 550px) {
     header {
         padding: 0 18px;
     }
@@ -100,70 +92,83 @@ nav a.active {
     }
 }
 
-/* Main Section */
-section{
-    min-height: 100vh;
-    padding: 5rem 9% 5rem;
+@media(max-width: 394px) {
+    header {
+        padding: 0 6px;
+    }
+
+    .name {
+        font-size: 2.8rem;
+        padding: 0 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-left: 16px;
+    }
 }
 
-.home{
+/* Main Section */
+.home {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    background-color: black;
+    padding: 10rem 15% 16rem;
+    margin: 20px auto 50px;
 }
 
-.home .home-content h1{
+.home .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
-span{
+h3 span, h1 span {
     color: #b74b4b;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 4rem;
-    margin-bottom: 3rem;
-    font-weight: 700;
+    padding-bottom: 10px;
+    font-weight: 400;
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.6rem;
 }
 
-.home-img{
+.home-img {
     border-radius: 50%;
 }
 
-.home-img img{
+.home-img img {
     position: relative;
-    width: 32vw;
+    width: 28vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
     transition: 0.2s linear;
 }
 
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
+.home .typing-text {
+    font-size: 38px;
+    font-weight: 500;
     min-width: 280px;
 }
 
-.typing-text span{
+.typing-text span {
     position: relative;
 }
 
-.typing-text span::before{
+.typing-text span::before {
     content: "software Developer";
     color: #b74b4b;
     animation: words 20s infinite;
 }
 
-.typing-text span::after{
+.typing-text span::after {
     content: "";
     background-color: black;
     position: absolute;
@@ -175,77 +180,91 @@ span{
 }
 
 /* Animations */
-@keyframes cursor{
+@keyframes cursor {
     to{
         border-left: 3px solid #b74b4b;
     }
 }
 
-@keyframes words{
-    0%, 33.33%{
+@keyframes words {
+    0%, 33.33% {
         content: "Cyber Security";
     }
-    33.34%, 66.66%{
+    33.34%, 66.66% {
         content: "3D Modelling";
     }
-    66.67%, 100%{
-        content: "Game Developer";
+    66.67%, 100% {
+        content: "Game Dev";
     }
 }
 
 /* Main responsiveness */
-@media (max-width: 1000px){
+@media(max-width:995px) {
     /* Main */
-    .home{
-        gap: 4rem;
-        padding: 10rem;
-    }
-}
-
-@media(max-width:995px){
-    /* Main */
-    .home{
+    .home {
         flex-direction: column;
-        margin: 5rem 4rem;
-        padding-top: 100px;
+        align-items: center;
+        padding-top: 30px;
     }
 
-    .home .home-content h3{
+    .home .home-content h3 {
         font-size: 3.5rem;
     }
 
-    .home .home-content h1{
+    .home .home-content h1 {
         font-size: 5rem;
     }
 
-    .home .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
+    .home .home-img img {
+        width: 50vw;
     }
 }
 
-@media(max-width: 525px){
+@media(max-width: 771px) {
+    .home .home-content h1 {
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 696px) {
     /* Main */
-    .home .home-content h1{
+    .home {
+        gap: 50px;
+    }
+
+    .home .home-content h1 {
+        font-size: 43px;
+        padding-bottom: 5px;
+    }
+
+    .home .home-content h3 {
+        font-size: 33px;
+        padding-bottom: 13px;
+    }
+}
+
+@media(max-width: 525px) {
+    /* Main */
+    .home {
+        padding-top: 20px;
+    }
+
+    .home .home-content h1 {
         font-size: 3.8rem;
         margin-bottom: 13px;
     }
 
-    .home .home-content h3{
+    .home .home-content h3 {
         font-size: 3rem;
         margin-bottom: 15px;
     }
 
-    .home .home-img img{
+    .home .home-img img {
         width: 60vw;
     }
 
-    .home .typing-text{
+    .home .typing-text {
         font-size: 24px;
-    }
-
-    .home{
-        padding-top: 130px;
     }
 }
 
@@ -344,5 +363,169 @@ footer {
     
     .navFooter ul li {
         margin: 8px 0;
+    }
+}
+
+/* ----------------------------------------- About Page Styles ---------------------------------- */
+
+.aboutContainer {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 20px 20px;
+}
+
+/* Header section */
+.aboutHeader {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.aboutHeader h1 {
+    font-size: 3.5rem;
+    color: #b74b4b;
+    margin-bottom: 10px;
+}
+
+.aboutHeader p {
+    font-size: 1.6rem;
+    color: #aaa;
+}
+
+section.profileSection {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 70px;
+
+}
+
+.profileImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-top: 50px;
+    border: 4px solid #b74b4b;
+}
+
+.profileImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText {
+    flex: 1;
+}
+
+.profileText h2 {
+    font-size: 2.2rem;
+    color: #b74b4b;
+    margin-bottom: 15px;
+}
+
+.profileText p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* Skills section */
+section.skillsSection {
+    margin-bottom: 80px;
+}
+
+section.skillsSection h2 {
+    font-size: 2.5rem;
+    color: #b74b4b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillItem {
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.skillItem:hover {
+    border-color: #b74b4b;
+}
+
+.skillIcon {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 10px;
+}
+
+.skillItem h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+/* Education section */
+section.educationSection {
+    margin-bottom: 40px;
+}
+
+section.educationSection h2 {
+    font-size: 2.5rem;
+    color: #b74b4b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.educationItem {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #b74b4b;
+}
+
+.educationItem h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.educationItem p {
+    font-size: 1.6rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    section.profileSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutHeader {
+        margin-bottom: 35px;
+    }
+
+    section.profileSection {
+        margin-bottom: 50px;
+    }
+
+    section.skillSection {
+        margin-bottom: 50px;
+    }
+    
+    .profileImage {
+        margin: 0 auto 20px;
     }
 }
