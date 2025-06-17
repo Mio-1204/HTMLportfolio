@@ -1,7 +1,7 @@
 <!DOCTYPE html> <!-- Using bootstrap starter template -->
 <html lang="en">
     <head>
-        <title>portfolioProject - aboutPage</title>
+        <title>portfolioProject - resumePage</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -58,7 +58,30 @@
         </header>
 
         <main>
-            <!-- About Section -->
+            <!-- Resume page -->
+            <div class="resumeContainer">
+                <div class="resumeHeader">
+                    <h1>My <span>Resume</span></h1>
+                    <p>Education, skills, and experiences</p>
+                </div>
+                    
+                <div class="resumePreview">
+                    <h2 class="sectionTitle">Resume Preview</h2>
+                    
+                    <div class="pdfViewer">
+                        <!-- PDF Embed using iframe -->
+                        <iframe src="images/resume.pdf" class="pdfFrame" title="Resume Preview">
+                        </iframe>
+                    </div>
+                    
+                    <div class="downloadSection">
+                        <a href="images/resume.pdf" class="downloadBTN" target="_blank" download="resume.pdf">
+                            <i class="fa-solid fa-download" style="padding-top: 3px"> </i>
+                            <span>Download Resume (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
