@@ -188,13 +188,13 @@ h3 span, h1 span {
 
 @keyframes words {
     0%, 33.33% {
-        content: "Cyber Security";
+        content: ": Cyber Security";
     }
     33.34%, 66.66% {
-        content: "3D Modelling";
+        content: ": 3D Modelling";
     }
     66.67%, 100% {
-        content: "Game Dev";
+        content: ": Game Dev";
     }
 }
 
@@ -204,7 +204,7 @@ h3 span, h1 span {
     .home {
         flex-direction: column;
         align-items: center;
-        padding-top: 30px;
+        text-align: center;
     }
 
     .home .home-content h3 {
@@ -243,10 +243,10 @@ h3 span, h1 span {
     }
 }
 
-@media(max-width: 525px) {
+@media(max-width: 665px) {
     /* Main */
     .home {
-        padding-top: 20px;
+        padding: 10rem 50px 16rem;
     }
 
     .home .home-content h1 {
@@ -466,12 +466,16 @@ section.skillsSection h2 {
 .skillIcon {
     font-size: 3rem;
     color: #b74b4b;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .skillItem h3 {
     font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skillItem p {
+    font-size: 1.1rem;
 }
 
 /* Education section */
@@ -523,7 +527,18 @@ section.educationSection h2 {
 
     section.skillSection {
         margin-bottom: 50px;
+
     }
+
+    .skillItem {
+    width: 170px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+}
     
     .profileImage {
         margin: 0 auto 20px;
@@ -541,7 +556,7 @@ section.educationSection h2 {
 
 .resumeHeader {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .resumeHeader h1 {
@@ -552,6 +567,7 @@ section.educationSection h2 {
 
 .resumeHeader p {
     font-size: 1.5rem;
+    color: #aaa;
 }
 
 .resumePreview {
@@ -561,10 +577,10 @@ section.educationSection h2 {
 
 .pdfViewer {
     width: 100%;
-    height: 500px;
-    border: 1px solid #333;
+    height: 1000px;
+    border: 1px solid #292929;
     border-radius: 8px;
-    background-color: #1a1a1a;
+    background-color: #1d1c1c;
 }
 
 .pdfFrame {
@@ -575,7 +591,7 @@ section.educationSection h2 {
 
 .downloadBTN {
     display: inline-flex;
-    background-color: #b74b4b;
+    background-color: #b34747;
     color: white;
     padding: 1rem 1rem;
     border-radius: 5px;
@@ -587,7 +603,7 @@ section.educationSection h2 {
 }
 
 .downloadBTN:hover {
-    background-color: #9a3a3a;
+    background-color: #923535;
     transform: translateY(-3px);
 }
 
@@ -601,4 +617,173 @@ section.educationSection h2 {
     .pdfViewer {
         height: 50vh;
     }
+}
+
+@media (max-width: 768px) {
+    .resumeContainer {
+        margin-bottom: 120px;
+    }
+}
+
+/* ----------------------------------------- Projects Page Styles ---------------------------------- */
+
+.projectsContainer {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.projectsHeader {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projectsHeader h1 {
+    font-size: 3.5rem;
+    color: #be4f4f;
+    margin-bottom: 10px;
+}
+
+.projectsHeader p {
+    font-size: 1.6rem;
+    color: #aaa;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.projectCard {
+    background-color: #201e1e;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+    border-color: #b74b4b;
+    transform: translateY(-5px);
+}
+
+.projectCard h3 {
+    font-size: 2.2rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.projectPreview {
+    height: 500px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.projectPreview iframe, 
+.projectPreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectCard p {
+    font-size: 1.6rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    min-height: 80px;
+}
+
+.projectActions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.projectBTN {
+    flex: 1;
+    min-width: 120px;
+    background-color: #b74b4b;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.projectBTN:hover {
+    background-color: #9a3a3a;
+    transform: translateY(-3px);
+    color: white;
+}
+
+.projectBTN i {
+    font-size: 1.4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+    .projectGrid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+
+@media (max-width: 850px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .projectsHeader h1 {
+        font-size: 3rem;
+    }
+    
+    .projectCard h3 {
+        font-size: 2rem;
+    }
+
+    .projectPreview {
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    .projectPreview {
+        height: 200px;
+    }
+
+    .projectActions {
+        flex-direction: column;
+    }
+
+    .projectBTN {
+        width: 100%;
+    }
+}
+
+/* ----------------------------------------- Blog Page Styles ---------------------------------- */
+
+.blogContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.blogContainer h1 {
+    font-size: 5rem;
+    color: white;
 }
