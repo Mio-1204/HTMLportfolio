@@ -20,7 +20,7 @@ body {
     height: 100vh;
 }
 
-/* Navigation Bar */
+/* ----------------------- Navigation Bar -----------------------*/
 header {
     display: flex;
     position: relative;
@@ -49,12 +49,21 @@ nav a {
 }
 
 nav a:hover, nav a:active {
+    color: #b7854b;
+    border-bottom: 3px solid #b7854b;
+}
+
+nav a.active {
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
 
+#active {
+    text-decoration: underline;
+}
+
 .name {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: #b74b4b;
     cursor: pointer;
@@ -135,7 +144,7 @@ h3 span, h1 span {
 
 .home-content h3 {
     font-size: 4rem;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     font-weight: 400;
 }
 
@@ -166,10 +175,11 @@ h3 span, h1 span {
     position: relative;
 }
 
+/* Animations */
 .typing-text span::before {
     content: "software Developer";
     color: #b74b4b;
-    animation: words 20s infinite;
+    animation: words 10s infinite;
 }
 
 .typing-text span::after {
@@ -183,7 +193,6 @@ h3 span, h1 span {
     animation: cursor 1s infinite;
 }
 
-/* Animations */
 @keyframes cursor {
     to{
         border-left: 3px solid #b74b4b;
@@ -272,7 +281,7 @@ h3 span, h1 span {
     }
 }
 
-/* Footer */
+/* ----------------------- Footer -----------------------*/
 footer {
     background-color: #1a1a1a;
     padding: 40px 0 20px;
@@ -311,7 +320,7 @@ footer {
 
 .socialsFooter a i {
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 /* Navigation Footer */
@@ -466,6 +475,7 @@ section.skillsSection h2 {
 
 .skillItem:hover {
     border-color: #b74b4b;
+    transition: all 0.3s ease;
 }
 
 .skillIcon {
@@ -528,11 +538,11 @@ section.educationSection h2 {
     }
 
     section.profileSection {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
-    section.skillSection {
-        margin-bottom: 50px;
+    section.skillsSection {
+        margin-bottom: 40px;
 
     }
 
