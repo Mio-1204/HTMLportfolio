@@ -107,7 +107,7 @@ nav a.active {
     }
 
     nav a {
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 20px;
     }
 }
@@ -125,6 +125,22 @@ nav a.active {
     nav a {
         font-size: 16px;
         margin-left: 16px;
+    }
+}
+
+@media(max-width: 345px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    nav,
+    .name{
+        padding: 0 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-left: 12px;
     }
 }
 
@@ -544,6 +560,10 @@ section.educationSection h2 {
         margin: 0 3px;
     }
 
+    .profileText {
+        text-align: center;
+    }
+
     .aboutHeader {
         margin-bottom: 35px;
     }
@@ -658,7 +678,7 @@ section.educationSection h2 {
 .projectsContainer {
     max-width: 1500px;
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 10px 28px;
 }
 
 .projectsHeader {
@@ -760,7 +780,22 @@ section.educationSection h2 {
 }
 
 /* Responsive adjustments */
+@media(max-width: 1300px) {
+    .projectsContainer {
+        padding: 0 30px;
+    }
+
+    .projectGrid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+}
+
 @media (max-width: 1100px) {
+    .projectsContainer {
+        padding: 10px 20px;
+    }
+
     .projectGrid {
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
@@ -782,15 +817,11 @@ section.educationSection h2 {
     }
 
     .projectPreview {
-        height: 250px;
+        height: 300px;
     }
 }
 
 @media (max-width: 450px) {
-    .projectPreview {
-        height: 200px;
-    }
-
     .projectActions {
         flex-direction: column;
     }
@@ -979,7 +1010,7 @@ section.educationSection h2 {
 
 .formGroup textarea {
     height: 150px;
-    resize: vertical;
+    resize: none;
 }
 
 .submitBtn {
