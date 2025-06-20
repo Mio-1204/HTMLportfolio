@@ -802,19 +802,39 @@ section.educationSection h2 {
 
 /* ----------------------------------------- Blog Page Styles ---------------------------------- */
 
-.blogContainer {
-    display: flex;
-    align-items: top;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 100px auto;
-    padding: 100px 20px 200px;
+.BlogPlaceholder {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto 100px;
 }
 
-.blogContainer h1 {
-    font-size: 5rem;
-    color: white;
-    text-align: center;
+.BlogPlaceholder i {
+    font-size: 6rem;
+    color: #b74b4b;
+    margin-bottom: 20px;
+}
+
+.BlogPlaceholder h1 {
+    font-size: 3.5rem;
+    color: #b74b4b;
+    margin-bottom: 15px;
+}
+
+.BlogPlaceholder p {
+    font-size: 1.8rem;
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.BlogPlaceholder .note {
+    font-size: 1.6rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
 }
 
 /* ----------------------------------------- Contact Page Styles ---------------------------------- */
