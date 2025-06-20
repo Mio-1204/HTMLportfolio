@@ -35,6 +35,13 @@ header {
     transform: scale(1.1);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 nav a span {
     margin-left: 0.3rem;
 }
@@ -101,7 +108,7 @@ nav a.active {
 
     nav a {
         font-size: 18px;
-        margin-left: 18px;
+        margin-left: 20px;
     }
 }
 
@@ -218,6 +225,9 @@ h3 span, h1 span {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+
     }
 
     .home .home-content h3 {
@@ -259,7 +269,7 @@ h3 span, h1 span {
 @media(max-width: 665px) {
     /* Main */
     .home {
-        padding: 10rem 50px 16rem;
+        padding:6rem 50px 21rem;
     }
 
     .home .home-content h1 {
@@ -530,7 +540,8 @@ section.educationSection h2 {
     section.profileSection {
         flex-direction: column;
         gap: 20px;
-        margin: 0 5px;
+        padding: 0 8px;
+        margin: 0 3px;
     }
 
     .aboutHeader {
@@ -543,12 +554,12 @@ section.educationSection h2 {
 
     section.skillsSection {
         margin-bottom: 40px;
-
+        padding: 0;
     }
 
     .skillItem {
-    width: 170px;
-    padding: 15px;
+    width: 155px;
+    padding: 10px;
     margin: 10px;
     background-color: #1a1a1a;
     border-radius: 8px;
@@ -793,11 +804,11 @@ section.educationSection h2 {
 
 .blogContainer {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     max-width: 1000px;
-    margin: 385px auto;
-    padding: 10px 20px;
+    margin: 100px auto;
+    padding: 100px 20px 200px;
 }
 
 .blogContainer h1 {
