@@ -96,9 +96,15 @@ nav a.active {
     }
 }
 
+@media(max-width: 700px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
 @media(max-width: 550px) {
     header {
-        padding: 0 18px;
+        padding: 0 10px;
     }
 
     .name {
@@ -114,17 +120,21 @@ nav a.active {
 
 @media(max-width: 394px) {
     header {
-        padding: 0 6px;
+        padding: 0 5px;
     }
 
     .name {
         font-size: 2.8rem;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     nav a {
         font-size: 16px;
         margin-left: 16px;
+    }
+
+    nav {
+        padding: 15px;
     }
 }
 
@@ -1028,4 +1038,135 @@ section.educationSection h2 {
 
 .submitBtn:hover {
     background-color: #9a3a3a;
+}
+
+/* ----------------------------------------- Theme ---------------------------------- */
+
+:root {
+    /* Dark theme */
+    --dark-bg: #0d1117;
+    --dark-text: #e6edf3;
+    --dark-header: #161b22;
+    --dark-card: #161b22;
+    --dark-border: #30363d;
+    --dark-accent: #b74b4b;
+    
+    /* Light theme */
+    --light-bg: #f0f2f5;
+    --light-text: #1f2328;
+    --light-header: #ffffff;
+    --light-card: #ffffff;
+    --light-border: #d0d7de;
+    --light-accent: #b74b4b;
+    
+    --transition-speed: 0.4s;
+}
+
+/* Apply a little transitions */
+body, body * {
+    transition: 
+        background-color var(--transition-speed) ease,
+        color var(--transition-speed) ease,
+        border-color var(--transition-speed) ease;
+}
+
+/* Base dark theme */
+body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    background-color: transparent;
+    border: 1px solid var(--dark-border);
+    color: var(--dark-text);
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    transition: all var(--transition-speed) ease;
+}
+
+.light-theme .theme-toggle {
+    border-color: var(--light-border);
+    color: var(--light-text);
+}
+
+.theme-toggle:hover {
+    background-color: rgba(183, 75, 75, 0.1);
+    transform: scale(1.05);
+}
+
+/* Apply theme in site */
+header, footer {
+    background-color: var(--dark-header);
+}
+
+.light-theme header,
+.light-theme footer {
+    background-color: var(--light-header);
+}
+
+nav a, .name {
+    color: var(--dark-text);
+}
+
+.light-theme nav a,
+.light-theme .name {
+    color: var(--light-text);
+}
+
+/* Cards on Projects page */
+.projectCard, .skillItem, .educationItem {
+    background-color: var(--dark-card);
+    border: 1px solid var(--dark-border);
+}
+
+.light-theme .projectCard,
+.light-theme .skillItem,
+.light-theme .educationItem {
+    background-color: var(--light-card);
+    border: 1px solid var(--light-border);
+    
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.name {
+    padding-right: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 1000px){
+    .header-left span{
+        display: none;
+    }
+
+    .name {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 550px){
+    .header-left{
+        gap: 5px;
+    }
+
+    .header-left button{
+        font-size: 15px;
+    }
 }

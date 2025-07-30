@@ -27,12 +27,19 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="projectStyle.css">
+        <script src="scripts.js"></script>
     </head>
 
     <body class="contactPage">
         <!-- Navbar, used icons from fontawesome-->
         <header>
-            <a class="name" href="index.html">Home</a>
+            <div class="header-left">
+                <a class="name" href="index.html">Home</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                    <span></span>
+                </button>
+            </div>
             <nav>
                 <a href="about.html">
                         <i class="fa-solid fa-person"></i>
