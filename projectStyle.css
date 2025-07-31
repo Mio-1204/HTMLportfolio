@@ -14,8 +14,6 @@ a {
 }
 
 body {
-    color: white;
-    background-color: black;
     width: 100%;
     height: 100vh;
 }
@@ -31,8 +29,17 @@ header {
     margin-top: 20px;
 }
 
+.name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #b74b4b;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
 .name:hover {
     transform: scale(1.1);
+    color: var(--red-hvr);
 }
 
 nav {
@@ -49,15 +56,14 @@ nav a span {
 nav a {
     font-size: 18px;
     font-weight: 500;
-    color: white;
     margin-left: 30px;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
 
 nav a:hover, nav a:active {
-    color: #b7854b;
-    border-bottom: 3px solid #b7854b;
+    color: var(--yellow-hvr);
+    border-bottom: 3px solid var(--yellow-hvr);
 }
 
 nav a.active {
@@ -67,14 +73,6 @@ nav a.active {
 
 #active {
     text-decoration: underline;
-}
-
-.name {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #b74b4b;
-    cursor: pointer;
-    transition: 0.5s ease;
 }
 
 /* Nav responsiveness */
@@ -319,9 +317,8 @@ h3 span, h1 span {
 
 /* ----------------------- Footer -----------------------*/
 footer {
-    background-color: #1a1a1a;
     padding: 40px 0 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--dark-border);
 }
 
 .footerContainer {
@@ -343,19 +340,19 @@ footer {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #333;
+    background-color: var(--dark-social);
     border-radius: 50%;
     margin: 0 10px;
     transition: all 0.3s ease;
 }
 
 .socialsFooter a:hover {
-    background-color: #b74b4b;
+    background-color: var(--red-hvr);
     transform: translateY(-5px);
 }
 
 .socialsFooter a i {
-    color: white;
+    color: var(--dark-text);
     font-size: 2.5em;
 }
 
@@ -374,7 +371,7 @@ footer {
 }
 
 .navFooter ul li a {
-    color: #aaa;
+    color: var(--dark-text);
     text-decoration: none;
     font-size: 1.3rem;
     transition: color 0.3s ease;
@@ -382,18 +379,18 @@ footer {
 }
 
 .navFooter ul li a:hover {
-    color: #b74b4b;
+    color: var(--red-hvr);
 }
 
 /* Copyright Footer */
 .bottomFooter {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--dark-border);
 }
 
 .bottomFooter p {
-    color: #777;
+    color: var(--dark-text);
     font-size: 1.3rem;
     margin: 0;
 }
@@ -437,7 +434,6 @@ footer {
 
 .aboutHeader p {
     font-size: 1.6rem;
-    color: #aaa;
 }
 
 section.profileSection {
@@ -478,7 +474,6 @@ section.profileSection {
     font-size: 1.6rem;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: #ccc;
 }
 
 /* Skills section */
@@ -510,7 +505,7 @@ section.skillsSection h2 {
 }
 
 .skillItem:hover {
-    border-color: #b74b4b;
+    border-color: var(--red-hvr);
     transition: all 0.3s ease;
 }
 
@@ -552,12 +547,10 @@ section.educationSection h2 {
 .educationItem h3 {
     font-size: 2rem;
     margin-bottom: 5px;
-    color: #ddd;
 }
 
 .educationItem p {
     font-size: 1.6rem;
-    color: #aaa;
     margin-bottom: 10px;
 }
 
@@ -624,13 +617,11 @@ section.educationSection h2 {
 
 .resumeHeader p {
     font-size: 1.5rem;
-    color: #aaa;
 }
 
 .resumePreview {
     flex: 1;
     min-width: 300px;
-    color: #d1d1d1;
 }
 
 .pdfViewer {
@@ -704,7 +695,6 @@ section.educationSection h2 {
 
 .projectsHeader p {
     font-size: 1.6rem;
-    color: #aaa;
 }
 
 .projectGrid {
@@ -723,13 +713,12 @@ section.educationSection h2 {
 }
 
 .projectCard:hover {
-    border-color: #b74b4b;
+    border-color: var(--red-hvr);
     transform: translateY(-5px);
 }
 
 .projectCard h3 {
     font-size: 2.2rem;
-    color: #ddd;
     margin-bottom: 15px;
 }
 
@@ -750,7 +739,6 @@ section.educationSection h2 {
 
 .projectCard p {
     font-size: 1.6rem;
-    color: #ccc;
     margin-bottom: 20px;
     min-height: 80px;
 }
@@ -899,7 +887,6 @@ section.educationSection h2 {
 
 .contactHeader p {
     font-size: 1.6rem;
-    color: #aaa;
 }
 
 .contactContainer h3 {
@@ -911,10 +898,10 @@ section.educationSection h2 {
 
 /* Social media section */
 .socialSection {
-    background-color: #1a1a1a;
+    background-color: var(--dark-card);
     padding: 30px;
     border-radius: 8px;
-    border: 1px solid #333;
+    border: 1px solid var(--dark-border);
     margin-bottom: 20px;
 }
 
@@ -940,18 +927,19 @@ section.educationSection h2 {
 .socialLink {
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--dark-text);
     font-size: 1.8rem;
     text-decoration: none;
     transition: color 0.3s ease;
     padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #333;
+    background-color: var(--dark-social);
+    border: 1px solid var(--dark-border);
+    border-radius: 4px;
 }
 
 .socialLink:hover {
-    color: #b74b4b;
-    background-color: #2a2a2a;
+    color: var(--red-hvr);
+    background-color: #252a2e;
 }
 
 .socialLink i {
@@ -989,10 +977,10 @@ section.educationSection h2 {
 
 /* Contact form */
 .contactForm {
-    background-color: #1a1a1a;
+    background-color: var(--dark-card);
     padding: 30px;
     border-radius: 8px;
-    border: 1px solid #333;
+    border: 1px solid var(--dark-border);
     margin-bottom: 40px;
 }
 
@@ -1004,17 +992,16 @@ section.educationSection h2 {
     display: block;
     font-size: 1.6rem;
     margin-bottom: 8px;
-    color: #ddd;
 }
 
 .formGroup input, 
 .formGroup textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #444;
+    border: 1px solid var(--dark-border);
     border-radius: 4px;
-    background-color: #333;
-    color: white;
+    background-color: var(--dark-social);
+    color: var(--dark-text);
     font-size: 1.6rem;
 }
 
@@ -1045,24 +1032,39 @@ section.educationSection h2 {
 :root {
     /* Dark theme */
     --dark-bg: #0d1117;
-    --dark-text: #e6edf3;
+    --dark-text: #d1d1d1;
     --dark-header: #161b22;
     --dark-card: #161b22;
-    --dark-border: #30363d;
+    --dark-border: #262b30;
     --dark-accent: #b74b4b;
+    --dark-social: #2c3136;
     
     /* Light theme */
     --light-bg: #f0f2f5;
-    --light-text: #1f2328;
+    --light-text: rgb(50, 50, 50);
     --light-header: #ffffff;
     --light-card: #ffffff;
-    --light-border: #d0d7de;
+    --light-border: #d0d6e2;
     --light-accent: #b74b4b;
+    --light-social: #e4e8ee;
+
+    --red-hvr: #b74b4b;
+    --yellow-hvr: #b98242;
     
     --transition-speed: 0.4s;
 }
 
-/* Apply a little transitions */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.name {
+    padding-right: 20px;
+}
+
+/* Apply transitions */
 body, body * {
     transition: 
         background-color var(--transition-speed) ease,
@@ -1107,7 +1109,7 @@ body.light-theme {
     transform: scale(1.05);
 }
 
-/* Apply theme in site */
+/* Apply theme in site - navigation bar */
 header, footer {
     background-color: var(--dark-header);
 }
@@ -1121,12 +1123,61 @@ nav a, .name {
     color: var(--dark-text);
 }
 
+.light-theme .name:hover {
+    transform: scale(1.1);
+    color: var(--red-hvr);
+}
+
 .light-theme nav a,
 .light-theme .name {
     color: var(--light-text);
 }
 
-/* Cards on Projects page */
+.light-theme a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+.light-theme nav a:not(.active):hover,
+.light-theme nav a:not(.active):active {
+    color: var(--yellow-hvr);
+    border-bottom: 3px solid var(--yellow-hvr);
+}
+
+/* Footer */
+.light-theme footer {
+    border-top: 1px solid var(--light-border);
+}
+
+.light-theme .socialsFooter a {
+    background-color: var(--light-social);
+}
+
+.light-theme .socialsFooter a i {
+    color: var(--light-text);
+}
+
+.light-theme .socialsFooter a:hover {
+    background-color: var(--red-hvr);
+}
+
+.light-theme .navFooter ul li a {
+    color: var(--light-text);
+}
+
+.light-theme .navFooter ul li a:hover {
+    color: var(--red-hvr);
+}
+
+.light-theme .bottomFooter {
+    border-top: 1px solid var(--light-border);
+}
+
+.light-theme .bottomFooter p {
+    color: var(--light-text);
+}
+
+/* Projects page - Cards */
 .projectCard, .skillItem, .educationItem {
     background-color: var(--dark-card);
     border: 1px solid var(--dark-border);
@@ -1137,17 +1188,44 @@ nav a, .name {
 .light-theme .educationItem {
     background-color: var(--light-card);
     border: 1px solid var(--light-border);
-    
 }
 
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+/* Projects hover */
+.light-theme .skillItem:hover {
+    border-color: var(--red-hvr);
 }
 
-.name {
-    padding-right: 20px;
+.light-theme .projectCard:hover {
+    border-color: var(--red-hvr);
+}
+
+/* Contact page area */
+.light-theme .socialSection {
+    background-color: var(--light-card);
+    border-color: var(--light-border);
+}
+
+.light-theme .socialLink {
+    background-color: var(--light-social);
+    color: var(--light-text);
+    border-color: var(--light-border);
+}
+
+.light-theme .socialLink:hover {
+    background-color: #bebebe;
+    color: var(--red-hvr);
+}
+
+.light-theme .contactForm {
+    background-color: var(--light-card);
+    border-color: var(--light-border);
+}
+
+.light-theme .formGroup input,
+.light-theme .formGroup textarea {
+    background-color: var(--light-social);
+    color: var(--light-text);
+    border-color: var(--light-border);
 }
 
 /* Responsiveness */
