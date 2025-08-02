@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const blogList = document.getElementById('blog-list');
     
-    fetch('../data/posts.json')
+    fetch('data/posts.json')
         .then(response => response.json())
         .then(posts => {
             posts.forEach(post => {
