@@ -215,11 +215,10 @@ h3 span, h1 span {
 
 .typing-text span::after {
     content: "";
-    background-color: black;
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid black;
+    border-left: 3px solid var(--dark-bg);
     right: -8;
     animation: cursor 1s infinite;
 }
@@ -831,39 +830,68 @@ section.educationSection h2 {
 
 /* ----------------------------------------- Blog Page Styles ---------------------------------- */
 
-.BlogPlaceholder {
-    text-align: center;
-    padding: 100px 20px;
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     max-width: 800px;
-    margin: 0 auto 100px;
+    margin: 2rem auto;
+    padding: 1rem 0 2rem;
 }
 
-.BlogPlaceholder i {
-    font-size: 6rem;
-    color: #b74b4b;
-    margin-bottom: 20px;
-}
-
-.BlogPlaceholder h1 {
-    font-size: 3.5rem;
-    color: #b74b4b;
-    margin-bottom: 15px;
-}
-
-.BlogPlaceholder p {
-    font-size: 1.8rem;
-    color: #aaa;
-    line-height: 1.6;
+.blogHeader {
+    text-align: center;
     margin-bottom: 30px;
 }
 
-.BlogPlaceholder .note {
+.blogHeader h1 {
+    font-size: 3.5rem;
+    color: #be4f4f;
+    margin-bottom: 10px;
+}
+
+.blogHeader p {
     font-size: 1.6rem;
-    color: #777;
-    font-style: italic;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
+}
+
+.blog-post {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--dark-border);
+}
+
+.light-theme .blog-post {
+    background: var(--light-card);
+    border-color: var(--light-border);
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-color: var(--red-hvr);
+}
+
+.post-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.post-meta .space {
+    width: 3px;
+    display: inline-block;
+}
+
+.post-content {
+    line-height: 1.7;
+    font-size: 1.6rem;
 }
 
 /* ----------------------------------------- Contact Page Styles ---------------------------------- */
@@ -1142,6 +1170,11 @@ nav a, .name {
 .light-theme nav a:not(.active):active {
     color: var(--yellow-hvr);
     border-bottom: 3px solid var(--yellow-hvr);
+}
+
+/* Home */
+.light-theme .typing-text span::after {
+    border-left: 3px solid var(--light-bg);
 }
 
 /* Footer */

@@ -1,4 +1,3 @@
-// Theme Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
@@ -36,6 +35,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     initTheme();
 });
-
-// ------------------------------ Part Two ------------------------------
-
