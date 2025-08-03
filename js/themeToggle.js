@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize
     function initTheme() {
-        const savedTheme = localStorage.getItem('theme');
+        const savedTheme = localStorage.getItem('currentTheme');
         const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
         
         // Saved preference
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             themeIcon.classList.replace('fa-sun', 'fa-moon');
             themeText.textContent = 'Dark Mode';
         }
-        localStorage.setItem('theme', theme);
+        localStorage.setItem('currentTheme', theme);
     }
 
     // Toggle

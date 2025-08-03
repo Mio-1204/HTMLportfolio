@@ -625,16 +625,16 @@ section.educationSection h2 {
 
 .pdfViewer {
     width: 100%;
-    height: 1000px;
+    height: 1020px;
     border: 1px solid #292929;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #1d1c1c;
 }
 
 .pdfFrame {
     width: 100%;
     height: 100%;
-    border: none;
+    border-radius: 10px;
 }
 
 .downloadBTN {
@@ -833,15 +833,15 @@ section.educationSection h2 {
 .blog-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 800px;
+    gap: 25px;
+    max-width: 1200px;
     margin: 2rem auto;
-    padding: 1rem 0 2rem;
+    padding: 1rem 20px 2rem;
 }
 
 .blogHeader {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .blogHeader h1 {
@@ -877,11 +877,13 @@ section.educationSection h2 {
 .post-title {
     font-size: 2.2rem;
     margin-bottom: 10px;
+    color: #b74b4b;
 }
 
 .post-meta {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
+    color: gray;
 }
 
 .post-meta .space {
@@ -1076,7 +1078,7 @@ section.educationSection h2 {
     --light-accent: #b74b4b;
     --light-social: #e4e8ee;
 
-    --red-hvr: #b74b4b;
+    --red-hvr: #bd4646;
     --yellow-hvr: #b98242;
     
     --transition-speed: 0.4s;
@@ -1199,7 +1201,7 @@ nav a, .name {
 }
 
 .light-theme .navFooter ul li a:hover {
-    color: var(--red-hvr);
+    color: var(--yellow-hvr);
 }
 
 .light-theme .bottomFooter {
