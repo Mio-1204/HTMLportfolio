@@ -707,13 +707,14 @@ section.educationSection h2 {
     background-color: #201e1e;
     border-radius: 8px;
     padding: 20px;
-    border: 1px solid #333;
+    border: 1px solid #383838;
     transition: all 0.3s ease;
 }
 
 .projectCard:hover {
     border-color: var(--red-hvr);
     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .projectCard h3 {
@@ -1057,7 +1058,7 @@ section.educationSection h2 {
     background-color: #9a3a3a;
 }
 
-/* ----------------------------------------- Theme ---------------------------------- */
+/* ----------------------------------------- Theme Toggle ---------------------------------- */
 
 :root {
     /* Dark theme */

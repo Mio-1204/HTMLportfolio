@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
+function initThemeToggle() { 
     const themeToggle = document.getElementById('theme-toggle');
+    if (!themeToggle) return;
+
     const themeIcon = themeToggle.querySelector('i');
     const themeText = themeToggle.querySelector('span');
-    
-    // Initialize
+
+    // Saved preference
     function initTheme() {
         const savedTheme = localStorage.getItem('currentTheme');
         const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        
-        // Saved preference
         const theme = savedTheme || (systemPrefersLight ? 'light' : 'dark');
         applyTheme(theme);
     }
@@ -34,4 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     initTheme();
-});
+}

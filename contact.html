@@ -30,38 +30,8 @@
     </head>
 
     <body class="contactPage">
-        <!-- Navbar, used icons from fontawesome-->
-        <header>
-            <div class="header-left">
-                <a class="name" href="index.html">Home</a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
-                    <i class="fas fa-moon"></i>
-                    <span></span>
-                </button>
-            </div>
-            <nav>
-                <a href="about.html">
-                        <i class="fa-solid fa-person"></i>
-                        <span>About</span>
-                </a>
-                <a href="resume.html">
-                    <i class="fa-regular fa-file"></i>
-                    <span>Resume</span>
-                </a>
-                <a href="projects.html">
-                    <i class="fa-solid fa-diagram-project"></i>
-                    <span>Projects</span>
-                </a>
-                <a href="blog.html">
-                    <i class="fa-solid fa-blog"></i>
-                    <span>Blog</span>
-                </a>
-                <a href="contact.html" class="active">
-                    <i class="fa-solid fa-address-card"></i>
-                    <span>Contact</span>
-                </a>
-             </nav>
-        </header>
+       <!--Navbar-->
+        <div id="headerLoad"></div>
 
         <main>
             <!-- Contact page content -->
@@ -133,37 +103,9 @@
             </div>
         </main>
 
-        <footer>
-            <!-- Footer -->
-             <div class="footerContainer">
-                <div class="socialsFooter">
-                    <a href="https://github.com/Mio-1204" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/john-laurence-mislang/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/share/1NuJDqrcGQ/?mibextid=wwXIfr" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
+        <!-- Footer -->
+        <div id="footerLoad"></div>
 
-                <div class="navFooter">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="bottomFooter">
-                    <p>Copyright © 2025; Designed by <span class="designer">John Laurence Mislang</span>. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -180,5 +122,6 @@
         <!-- Actual Scripts for the Project -->
          <script src="js/themeToggle.js"></script>
          <script src="js/scripts.js"></script>
+         <script src="js/headerFooterLoader.js"></script>
     </body>
 </html>
