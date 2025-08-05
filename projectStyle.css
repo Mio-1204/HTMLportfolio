@@ -967,6 +967,7 @@ section.educationSection h2 {
 
 .socialLink {
     display: flex;
+    justify-content: center;
     align-items: center;
     color: var(--dark-text);
     font-size: 1.8rem;
