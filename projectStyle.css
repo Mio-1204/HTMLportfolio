@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    max-width: 100%;
 }
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 a {
@@ -16,6 +19,8 @@ a {
 body {
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 main {
@@ -98,6 +103,10 @@ nav a.active {
     nav a {
         font-size: 20px;
     }
+
+    .header-left .name {
+        padding-right: 10px;
+    }
 }
 
 @media(max-width: 700px) {
@@ -111,9 +120,9 @@ nav a.active {
         padding: 0 10px;
     }
 
-    .name {
+    .header-left .name {
         font-size: 2.8rem;
-        padding: 0 20px;
+        padding: 0 5px 0 20px;
     }
 
     nav a {
@@ -142,7 +151,7 @@ nav a.active {
     }
 }
 
-@media(max-width: 345px) {
+@media(max-width: 348px) {
     .name {
         font-size: 2.5rem;
     }
@@ -1099,7 +1108,6 @@ section.educationSection h2 {
 .header-left {
     display: flex;
     align-items: center;
-    gap: 15px;
 }
 
 .name {
