@@ -29,7 +29,7 @@ const openai = new OpenAI({
 });
 
 // ---------------- MONGO CONNECTION ----------------
-const uri = "mongodb+srv://nicog_db_user:PhjNsIHOuMU7Hq7a@4020ass.zqyqk7l.mongodb.net/?appName=4020Ass";
+//const uri
 const client = new MongoClient(uri);
 let db;
 
