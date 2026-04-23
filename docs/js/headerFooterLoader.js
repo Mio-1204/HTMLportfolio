@@ -58,12 +58,12 @@ function initAssistant() {
     }
 
     const messages = [
-        "Group: John Laurence Mislang, Nicolas Giammarresi, Roman Chaidiouk",
         "Evaluating ChatGPT across multiple domains.",
         "Datasets Evaluated: History, Social Science, Cybersecurity.",
         "Backend uses Node.js, MongoDB, and WebSockets.",
         "Results page's charts will display accuracy and response time.",
-        "Hash routing used to keep the site smooth and fast!"
+        "Hash routing used to keep the site smooth and fast!",
+        "Click the icon below to collapse!"
     ];
 
     let index = 0;
